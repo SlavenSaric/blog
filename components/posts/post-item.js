@@ -6,7 +6,7 @@ export default function PostItem(props){
     const {image, title, excerpt, date, slug} = props.post
 
     const formattedDate = new Date(date).toLocaleDateString('en-US', {
-        date: 'numeric',
+        day: 'numeric',
         month: 'long',
         year: 'numeric'
     })
