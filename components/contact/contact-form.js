@@ -46,6 +46,9 @@ export default function ContactForm() {
         message: enteredMessage,
       });
       setRequestStatus("success");
+      setEnteredEmail('')
+      setEnteredMessage('')
+      setEnteredName('')
     } catch (err) {
       setRequestStatus("error");
       setErrorState(err.message)
