@@ -43,7 +43,6 @@ export default async function handler(req, res) {
     }
 
     client.close()
-    console.log(newMessage);
     res
       .status(201)
       .json({ message: "Successfully stored message", data: newMessage });
